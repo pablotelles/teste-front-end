@@ -1,0 +1,12 @@
+@import '../../../style/abstract/variables';
+
+.main__button{
+    background-color: $color-yellow;
+    border: 1px solid $color-yellow2;
+    border-radius: 10px;
+    padding: 12px 24px;
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: white;
+}
