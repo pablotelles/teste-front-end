@@ -1,0 +1,35 @@
+@import '../../style/abstract/variables';
+@mixin arrow {
+    position: absolute;
+    border-radius: 100%;
+    padding: 5px;
+    top: 130px;
+    color: $color-gray;
+    background-color: white;
+    box-shadow: 0px 6px 16px rgba(179, 134, 0, 0.24);
+}
+.categories__container{
+    margin: 80px 56px;
+    .categories__list{
+        display: flex;
+        justify-content: space-between;
+        margin: 24px auto;
+        text-align: center;
+        position: relative;
+        .left__arrow{
+            @include arrow();
+            left: -15px;
+        }
+        .rigth__arrow{
+            @include arrow();
+            right: -15px;
+        }
+        img{
+            border-radius: 20px;
+            height: 277px;
+        }
+        p{
+            color: $color-gray;
+        }
+    }
+}

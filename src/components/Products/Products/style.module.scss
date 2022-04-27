@@ -1,0 +1,16 @@
+@import '../../../style/abstract/variables';
+
+main{
+    margin: 0 56px;
+    .product__container{
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 28px;
+        .product__menu{
+            display: flex;
+            align-items: center;
+            
+        }
+        
+    }
+}

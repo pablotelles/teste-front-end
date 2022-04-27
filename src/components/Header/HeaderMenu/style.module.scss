@@ -1,0 +1,27 @@
+@import '../../../style/abstract/variables';
+
+.headerMenu{
+    padding: 11px 0;
+    ul{
+        display: flex;
+        justify-content: space-between;
+        list-style: none;
+        text-transform: uppercase;
+        li{
+            font-size: 12px;
+            color: $color-gray;
+            transform: scale(1);
+            transition: 0.3s;
+            &:hover{
+                color: $color-yellow;
+                transform: scale(1.1);
+                transition: 0.3s;
+            }
+        }
+    }
+    .menuItem__icon{
+        display: flex;
+        align-items: center;
+        gap: 12px;
+    }  
+}

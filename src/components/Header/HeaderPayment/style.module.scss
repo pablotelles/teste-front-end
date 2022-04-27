@@ -1,0 +1,36 @@
+@import '../../../style/abstract/variables';
+
+.header__payment{
+    display: flex;
+    justify-content: center;
+    gap: 120px;
+    margin: 7px 0;
+    .headerPayment__item{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        p{
+            color: $color-gray;
+            font-size: 12px;
+        }
+        .text__security::after{
+            content: ' 100% segura';
+            color: $color-yellow;
+        }
+        .text__delivery::before{
+            content: 'Frete gratis ';
+            color: $color-yellow;
+        }
+        .text__parcel::before{
+            content: 'Parcele ';
+            color: $color-yellow;
+        }
+        .icons{
+            height: 14.347509384155273px;
+            width: 13.75px;
+            padding-right: 13px;        
+        }
+    }
+}
+
+
