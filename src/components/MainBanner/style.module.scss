@@ -10,6 +10,7 @@
     img{     
         width: 100%;
         height: 490px;
+        transition: 0.5s;
     }
     .mainBanner__content{
         display: grid;
@@ -38,6 +39,28 @@
             max-width: 487px;
             padding-left: 68px;
             font-size: 34px;
+        }
+    }
+}
+@media (max-width: $breakpoint) {
+    .mainBanner__content{
+        display: flex;
+        img{
+            background-size: contain;
+        }
+        .arrow__left{
+            display: none;
+        }
+        .arrow__rigth{
+            display: none;
+        }
+    }
+    .mainBanner__title{
+        h1{
+            text-align: left;
+            font-weight: 300;
+            font-size: 40px;
+            line-height: 30px;
         }
     }
 }

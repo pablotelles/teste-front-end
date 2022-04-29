@@ -1,35 +1,40 @@
 @import '../../style/abstract/variables';
-@mixin arrow {
-    position: absolute;
-    border-radius: 100%;
-    padding: 5px;
-    top: 130px;
-    color: $color-gray;
-    background-color: white;
-    box-shadow: 0px 6px 16px rgba(179, 134, 0, 0.24);
-}
+@import '../../style/abstract/arrows';
+
 .categories__container{
-    margin: 80px 56px;
+    margin: 80px 0 80px 56px;
+    position: relative;
+    .left__arrow{
+        @include arrows();
+        top: 200px;
+        left: -15px;
+    }
+    .rigth__arrow{
+        @include arrows();
+        top: 200px;
+        right: 54px;
+    }
     .categories__list{
         display: flex;
-        justify-content: space-between;
-        margin: 24px auto;
+        gap: 40px;
+        margin-top: 24px;
         text-align: center;
         position: relative;
-        .left__arrow{
-            @include arrow();
-            left: -15px;
-        }
-        .rigth__arrow{
-            @include arrow();
-            right: -15px;
-        }
+        transition: 0.5s;
+        z-index: 1;
+        overflow: hidden;
         img{
             border-radius: 20px;
-            height: 277px;
+            max-width: 277px;
+            max-height: 277px;
         }
         p{
             color: $color-gray;
         }
     }
+    @media (max-width: $breakpoint) {
+
+        margin: 80px 10px;
+
+}
 }

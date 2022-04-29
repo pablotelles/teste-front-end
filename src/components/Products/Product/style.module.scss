@@ -1,0 +1,107 @@
+@import '../../../style/abstract/variables';
+@import '../../../style/abstract/arrows';
+.products__container{
+    position: relative;
+    padding: 38px 0;
+    overflow: hidden;
+    .leftArrow{
+        @include arrows();
+        top: 270px;
+        left: 0;
+    }
+    .rigthArrow{
+        @include arrows();
+        top: 270px;
+        right: 0;  
+    }
+    .products__list{
+        display: flex;
+        align-items: center;
+        transition: 0.5s;
+        .products__item{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            min-width: 300px;
+            text-align: center;
+            .products__icons{
+                width: 100%;
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+                p{
+                    font-weight: 700;
+                    font-size: 14px;
+                    line-height: 21px;
+                    text-align: center;
+                    text-transform: uppercase;
+                    color: $color-yellow;
+                    padding: 10px 21px;
+                    background: #FEF6E7;
+                    border-radius: 6px;
+                }
+    
+            }
+            .products__title{                
+                max-width: 150px;
+                margin-top: 10px;
+                font-size: 14px;
+                color: $color-gray;
+                line-height: 21px;
+                text-align: center;
+                text-transform: uppercase;
+            }
+            .products__oldPrice{
+                font-weight: 400;
+                margin-top: 14px;
+                font-size: 16px;
+                line-height: 24px;
+                text-align: center;
+                text-decoration-line: line-through;
+                color: $color-gray;
+            }
+            .products__price{
+                margin-top: 4px;
+                font-weight: 700;
+                font-size: 18px;
+                line-height: 27px;
+                text-align: center;
+                color: $color-black;
+            }
+            .products__memberPrice{
+                display: flex;
+                flex-direction: column;
+                margin: 4px 0;
+                font-weight: 700;
+                font-size: 16px;
+                line-height: 24px;
+                text-align: center;
+                color: $color-yellow;
+                &::after{
+                    content: 'Para assinantes';
+                    color: $color-gray;
+                    font-size: 12px;
+                    margin-top: -8px;
+                }
+            }
+            .products__button{
+                width: 220px;
+                height: 48px;
+                background: $color-yellow;
+                border: 1px solid #F0D075;
+                box-sizing: border-box;
+                border-radius: 10px;
+                //text
+                font-weight: 900;
+                font-size: 16px;
+                line-height: 24px;
+                text-align: center;
+                letter-spacing: 0.08em;
+                text-transform: uppercase;
+                color: white;
+            }
+     
+        }
+    }
+}
