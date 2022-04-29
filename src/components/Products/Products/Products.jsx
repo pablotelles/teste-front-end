@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import style from './style.module.scss'
 import { SectionTitle } from '../../Titles/SectionsTitles/SectionTitles'
 import { BsChevronLeft as LeftArrow, BsChevronRight as RigthArrow } from 'react-icons/bs'
@@ -8,7 +8,11 @@ import { getProducts } from '../../../api/getProducts'
 
 export const Products = () => {
   const [products, setProducts] = useState([])
-  getProducts(setProducts)
+
+  useEffect(() => {
+    getProducts(setProducts)
+  }, [])
+
   return (
         <main>
             <div className={style.product__container}>
@@ -16,12 +20,12 @@ export const Products = () => {
                     <SectionTitle title={'Meu cachorro...'} />
                 </div>
                 <div className={style.product__menu}>
-                    <LeftArrow />
+                    <LeftArrow className={style.arrow} />
                     <MenuProducts />
-                    <RigthArrow />
+                    <RigthArrow className={style.arrow} />
                 </div>
             </div>
-            <Product products={products}/>
+              <Product products={products}/>
         </main>
   )
 }

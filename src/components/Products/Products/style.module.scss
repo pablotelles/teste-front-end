@@ -1,16 +1,17 @@
 @import '../../../style/abstract/variables';
 
 main{
-    margin: 0 56px;
+    margin: 0 56px;    
     .product__container{
         display: flex;
         justify-content: space-between;
         padding-bottom: 28px;
         .product__menu{
             display: flex;
-            align-items: center;
-            
-        }
-        
+            align-items: center;            
+        }        
+    }
+    @media (max-width: $breakpoint) {
+        margin: 0 10px;  
     }
 }

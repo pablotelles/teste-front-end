@@ -23,5 +23,17 @@
         display: flex;
         align-items: center;
         gap: 12px;
-    }  
+    }
+}
+@media (max-width: $breakpoint){
+    .headerMenu{
+        ul{
+            flex-direction: column;
+            text-align: center;
+            .menuItem__icon{
+             display: flex;
+             justify-content: center;
+            }
+        }
+    }
 }

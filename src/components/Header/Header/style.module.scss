@@ -1,3 +1,4 @@
+@import '../../../style/abstract/variables';
 header{
     position: relative;
     padding: 0 56px;
@@ -5,4 +6,10 @@ header{
     border-radius: 0px 0px 10px 10px;
     background-color: white;
     z-index: 2;
+    max-width: 100%;
+}
+@media (max-width: $breakpoint) {
+    header{
+        text-align: center;
+    }
 }

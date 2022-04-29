@@ -1,0 +1,30 @@
+@import '../../style/abstract/arrows';
+
+.brands__container{
+    margin: 64px 56px;
+    position: relative;
+    .left__arrow{
+        @include arrows();
+        left: 0;
+        top: 150px;
+    }
+    .rigth__arrow{
+        @include arrows();
+        right: 0;
+        top: 150px;
+    }
+    .brands__list{
+        display: flex;
+        list-style: none;
+        justify-content: center;
+        align-items: center;
+        gap: 93px;
+        margin: 79px 0;
+    }
+}
+@media (max-width: $breakpoint) {
+    .brands__container{
+        display: none;
+    }
+
+}

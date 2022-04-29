@@ -1,16 +1,11 @@
 import { api } from './api'
 
-export function getProducts () {
-  api.get('/')
+export function getProducts (setProducts) {
+  api.get('/products')
     .then(function (response) {
-    // handle success
-      console.log(response)
+      setProducts(response.data)
     })
     .catch(function (error) {
-    // handle error
       console.log(error)
-    })
-    .then(function () {
-    // always executed
     })
 }

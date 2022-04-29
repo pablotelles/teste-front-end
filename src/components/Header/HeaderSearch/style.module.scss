@@ -8,11 +8,11 @@
     padding: 12px 0;
     .headerSearch__logo{
         height: 46px;
-        width: 178px;
+        max-width: 178px;
     }
     .headerSearch__search{
         position: relative;
-        width: 657px;
+        max-width: 657px;
         height: 48px;
         grid-column: span 2;     
         input{
@@ -40,12 +40,27 @@
         .iconBox{
             margin-bottom: 20px;
             padding-left: 61px;
+            @media (max-width: $breakpoint){
+                display: none;
+            }
         }
         .icon{
             height: 25px;
             width: 25px;
-            padding-left: 39px;
+            padding-left: 39px; 
         }
     }
-
+}
+@media (max-width: $breakpoint) {
+    .headerSearch__container{
+        display: block;
+        margin: 0 auto;
+        text-align: center;
+        .headerSearch__search{
+            margin: 10px 0;
+        }
+        .headerSearch__icons{
+            display: none;
+        }
+    }
 }

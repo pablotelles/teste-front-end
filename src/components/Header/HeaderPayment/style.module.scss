@@ -31,6 +31,9 @@
             padding-right: 13px;        
         }
     }
+    @media (max-width: $breakpoint) {
+        display: none;
+    }
 }
 
 

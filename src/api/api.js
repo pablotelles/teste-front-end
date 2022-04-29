@@ -1,5 +1,5 @@
 import axios from 'axios'
 
 export const api = axios.create({
-  baseURL: 'https://app.econverse.com.br/teste-front-end/junior/caoselheiro/lista-produtos/produtos.json'
+  baseURL: 'https://6269c895f2c0cdabac12c0b5.mockapi.io/api/v1'
 })
