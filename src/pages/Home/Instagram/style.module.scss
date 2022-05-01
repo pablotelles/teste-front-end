@@ -1,0 +1,17 @@
+@import '../../style/abstract/variables';
+
+.container{
+    @include container();
+    overflow: hidden;
+    div{
+        
+        background-color: aqua;
+        display: flex;        
+        .instagram__image{
+            height: 243px;     
+            width: 1000px; 
+        }
+    }
+
+
+}

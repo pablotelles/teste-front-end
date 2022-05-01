@@ -1,0 +1,112 @@
+@import '../../../style/abstract/variables';
+
+@mixin inputCObtact {
+    min-width: 343px;
+    height: 48px;
+    background: #FFFFFF;
+    border: 1px solid #E5E5E5;
+    box-sizing: border-box;
+    border-radius: 10px;
+    outline: none;
+    padding-left: 72px;
+    font-size: 16px;
+    &::placeholder{
+        text-align: left;       
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 21px;
+    }
+    @media (max-width: $breakpoint) {
+        min-width: 250px;
+
+    }
+}
+
+.contact__container{
+    @include container();
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .contact__form{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        min-width: 772px;
+        min-height: 346px;
+        background: #FEF6E7;
+        border-radius: 20px;        
+        h3{
+            margin: 40px 24px 24px 24px;
+            max-width: 319px;
+            color: $color-black;
+            text-align: center;
+            font-weight: 700;
+            font-size: 24px;
+            line-height: 36px;
+            text-align: center;
+        }
+        .contact__content{
+            text-align: center;
+  
+            .contact__input__container{
+                position: relative;
+                .contact__name{
+                    @include inputCObtact();
+                    margin-bottom: 10px;
+                }
+                .contact__icon{
+                    position: absolute;
+                    left: 10px;
+                    top: 10px;
+                    color: $color-gray;
+                }
+                .contact__email{
+                   @include inputCObtact();
+                   margin-bottom: 32px;
+                }
+            }
+
+        }
+    }
+}
+@media (max-width: $breakpoint) {
+    .contact__container{
+        .contact__form{
+            min-width: 330px;
+            min-height: 346px;
+            max-width: 140%;     
+            h3{
+                margin: 40px 24px 24px 24px;
+                max-width: 319px;
+                color: $color-black;
+                text-align: center;
+                font-weight: 700;
+                font-size: 24px;
+                line-height: 36px;
+                text-align: center;
+            }
+            .contact__content{
+                text-align: center;
+      
+                .contact__input__container{
+                    position: relative;
+                    .contact__name{
+                        @include inputCObtact();
+                        margin-bottom: 10px;
+                    }
+                    .contact__icon{
+                        position: absolute;
+                        left: 10px;
+                        top: 10px;
+                        color: $color-gray;
+                    }
+                    .contact__email{
+                       @include inputCObtact();
+                       margin-bottom: 32px;
+                    }
+                }
+    
+            }
+        }
+    }
+}
