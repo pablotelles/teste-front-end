@@ -4,16 +4,15 @@ import PropTypes from 'prop-types'
 
 export const SlideControl = ({ setSlide, slide, number }) => {
   const numberSlides = []
-  function handlerSlide (position) {
+  function handlerSlideChange (position) {
     setSlide(position)
   }
   for (let i = 1; i <= number; i++) {
-    console.log(i, slide)
     numberSlides.push(<button
         className={slide === i
           ? style.slide__options__icon__Active
           : style.slide__options__icon }
-            onClick={() => handlerSlide(i)}
+            onClick={() => handlerSlideChange(i)}
         />)
   }
   return (

@@ -1,0 +1,45 @@
+@import '../../../style/abstract/variables';
+
+.post__list{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: 11px;
+    margin-bottom: 32px;
+    .post__item{
+        max-width: 281px;
+        margin-top: 32px;
+        .post__banner{
+            border-radius: 20px 20px 0 0;
+            width: 100%;
+        }
+        .post__content{
+            margin-top: -7px;
+            padding: 24px;
+            background: #FEF6E7;
+            border-radius: 0px 0px 20px 20px;
+            .post__title{
+                font-weight: 700;
+                font-size: 20px;
+                line-height: 30px;
+                color: $color-black;
+                margin-bottom: 16px;
+            }
+            .post__description{
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 21px;
+                color: $color-gray;
+                margin-bottom: 24px;
+            }
+        }
+    }
+}
+@media (max-width: $breakpoint) {
+    .post__list{
+        flex-direction: column;
+        .post__item{
+            margin-bottom: 24px;
+        }
+    }
+}

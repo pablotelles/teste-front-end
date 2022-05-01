@@ -1,0 +1,23 @@
+@import '../../../style/abstract/variables';
+
+.blog__container{    
+    @include container();
+    .leftArrow{
+        @include arrows();
+        left: 5px;
+        top: 200px;
+    }
+    .rigthArrow{
+        @include arrows();
+        right: 5px;
+        top: 200px;
+    }
+}
+@media (max-width: $breakpoint) {
+    .leftArrow{
+        display: none;
+    }
+    .rigthArrow{
+        display: none;
+    }
+}

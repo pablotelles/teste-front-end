@@ -1,8 +1,7 @@
 @import '../../style/abstract/variables';
 
 .brands__container{
-    margin: 64px 56px;
-    position: relative;
+    @include container();
     .left__arrow{
         @include arrows();
         left: 0;

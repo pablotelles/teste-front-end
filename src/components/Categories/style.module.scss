@@ -1,8 +1,7 @@
 @import '../../style/abstract/variables';
 
 .categories__container{
-    margin: 80px 0 80px 56px;
-    position: relative;
+    @include container();
     .left__arrow{
         @include arrows();
         top: 200px;
@@ -11,7 +10,7 @@
     .rigth__arrow{
         @include arrows();
         top: 200px;
-        right: 54px;
+        right: -5px;
     }
     .categories__list{
         display: flex;
@@ -33,7 +32,20 @@
     }
     @media (max-width: $breakpoint) {
 
-        margin: 80px 10px;
+        margin: 80px 30px;
+        .left__arrow{
+            display: none;
+        }
+        .rigth__arrow{
+            display: none;
+        }
+        .categories__list{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            img{
+                width: 100px;
+            }
+        }
 
 }
 }

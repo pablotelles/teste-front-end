@@ -1,12 +1,11 @@
 @import '../../../style/abstract/variables';
 
-main{
-    margin: 0 56px;    
+main{ 
+    @include container(); 
     .product__container{
         position: relative;
         display: flex;
-        justify-content: space-between;
-        padding-bottom: 28px;
+        justify-content: space-between;  
         .product__menu{
             display: flex;
             align-items: center;            
@@ -19,8 +18,11 @@ main{
         text-align: center;
         text-decoration-line: underline;
         color: $color-yellow;
-    }
+   }
     @media (max-width: $breakpoint) {
-        margin: 0 10px;  
+        margin: 0 10px;
+        .arrow{
+            display: none;
+        }
     }
 }
