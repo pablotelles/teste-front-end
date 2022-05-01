@@ -18,9 +18,7 @@ export const Products = () => {
   return (
         <main>
             <div className={style.product__container}>
-                <div>
-                    <SectionTitle title={'Meu cachorro...'} />
-                </div>
+                <SectionTitle title={'Meu cachorro...'} />
                 <div className={style.product__menu}>
                     <LeftArrow className={style.arrow} />
                     <MenuProducts />

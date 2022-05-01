@@ -19,6 +19,7 @@
         border-radius: 100%;
         padding: 5px;
         outline: none;
+        cursor: pointer;
     }
     .slide__options__icon__Active{
         margin-top: 24px;
@@ -29,5 +30,6 @@
         padding: 5px;
         outline: none;
         background-color: $color-gray;
+        cursor: pointer;
     }
 }

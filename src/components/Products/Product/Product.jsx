@@ -9,7 +9,7 @@ export const Product = ({ products, setSlide, slide }) => {
   const [scrollX, setScrollX] = useState(0)
   const widthList = (products.length * 300) + (products.length * 20)
 
-  // lidando com o scroll feito pelos circulos inferiores
+  // dealing with the scroll made by the lower circles
   useEffect(() => {
     if (slide < 2) {
       handleArrowLeft()

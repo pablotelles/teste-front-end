@@ -27,3 +27,8 @@ $breakpoint: 760px;
     background-color: white;
     box-shadow: 0px 6px 16px rgba(179, 134, 0, 0.24);
 }
+@mixin container {    
+    margin: 88px 56px;
+    margin-bottom: 40px;
+    position: relative;
+}

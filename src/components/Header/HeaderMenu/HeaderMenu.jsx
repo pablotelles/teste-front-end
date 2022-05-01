@@ -4,10 +4,11 @@ import style from './style.module.scss'
 import { CgMenu } from 'react-icons/cg'
 
 export const HeaderMenu = () => {
-  const [mobileMenu, setMobileMenu] = useState(false)
+  const [mobileMenu, setMobileMenu] = useState(true)
   return (
         <>
           <CgMenu
+            className={style.mobile__menu}
             onClick={() => setMobileMenu(!mobileMenu)}/>
           <nav
             className={style.headerMenu}

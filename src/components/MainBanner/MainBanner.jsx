@@ -10,10 +10,12 @@ export const MainBanner = () => {
   const [scrolX, setScrollX] = useState(1)
   const [slide, setSlide] = useState(1)
 
+  // change scrol by circlesBar control
   useEffect(() => {
     setScrollX(slide)
   }, [slide])
 
+  // change imagem every 3s
   useEffect(() => {
     setTimeout(() => {
       if (slide < 2) {
@@ -22,7 +24,7 @@ export const MainBanner = () => {
         setSlide(1)
       }
     }, 3000)
-  })
+  }, [slide])
 
   const handleRigthArrow = () => {
     let x = scrolX + 1
