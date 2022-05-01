@@ -3,6 +3,7 @@
 main{
     margin: 0 56px;    
     .product__container{
+        position: relative;
         display: flex;
         justify-content: space-between;
         padding-bottom: 28px;
@@ -10,6 +11,14 @@ main{
             display: flex;
             align-items: center;            
         }        
+    }
+    .product__showAll{
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 30px;
+        text-align: center;
+        text-decoration-line: underline;
+        color: $color-yellow;
     }
     @media (max-width: $breakpoint) {
         margin: 0 10px;  

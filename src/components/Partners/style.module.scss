@@ -1,77 +1,16 @@
 @import '../../style/abstract/variables';
 
+
 .partners__container{
     display: flex;
+    align-items: center;
     justify-content: center;
-    gap: 20px;
-    padding: 88px 0 88px 54px;
-    background: #E5E5E5;
-    position: relative;
-    .bacgroundImage{
-        background-image: url('../../assets/img/partners2.png');
-        background-repeat:no-repeat;
-        background-position: right;
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        top: -25px;
-        right: 0;
-    }
-    .partners__left{
-        min-width: 574px;
-        min-height: 284px;
-        padding-top: 40px;
-
-        background-color: #FEF6E7;        
-        background-position: right;
-        padding-left: 40px;
-        border-radius: 20px 20px 20px 20px;
-        h5{
-            font-weight: 700;
-            width: 199px;
-            margin-bottom: 16px;
-            font-size: 32px;
-            line-height: 48px;
-            color: $color-black;
-        }
-        p{
-            max-width: 295px;
-            margin-bottom: 32px;
-        }
-    }
-    .partners__rigth{
-        min-width: 574px;
-        min-height: 284px;
-        background-image: url('../../assets/img/partners1.png');
-        background: url('../../assets/img/partners1.png') linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000000 85.04%);
-        background-repeat: none;
-        opacity: 0.8;
-        border-radius: 20px 20px 20px 20px;
-        padding: 0px 40px;
-        h3{ 
-            padding-top: 50px;
-            font-weight: 700;
-            font-size: 40px;
-            line-height: 60px;
-            color: #FFFFFF;
-        }
-        p{
-            padding: 10px 0;
-            max-width: 196px;
-            font-weight: 400;
-            font-size: 16px;
-            line-height: 24px;
-            color: #FFFFFF;
-        }
-    }
-
+    padding: 80px 56px;
+    gap: 30px; 
 }
 @media (max-width: $breakpoint) {
     .partners__container{
         flex-direction: column;
-    }
-    .partners__left {
-        margin-top: 80px;
-        min-width: 574px;
+        padding: 0 20px;   
     }
 }
