@@ -1,0 +1,33 @@
+@import '../../style/abstract/variables';
+.slide__options{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    position: absolute;
+    right: 0;
+    left: 0;
+    margin: auto;
+
+
+    margin: auto;
+    .slide__options__icon{
+        margin-top: 24px;
+        width: 5px;
+        height: 5px;
+        border: 1px solid $color-gray;
+        border-radius: 100%;
+        padding: 5px;
+        outline: none;
+    }
+    .slide__options__icon__Active{
+        margin-top: 24px;
+        width: 5px;
+        height: 5px;
+        border: 1px solid $color-gray;
+        border-radius: 100%;
+        padding: 5px;
+        outline: none;
+        background-color: $color-gray;
+    }
+}

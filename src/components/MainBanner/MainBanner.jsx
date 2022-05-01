@@ -1,12 +1,28 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import style from './style.module.scss'
 import bannerImage1 from '../../assets/img/bannerimage1.png'
-import bannerImage2 from '../../assets/Healing_Site_Blog_Florais-para-masculino-saudável-960-x-500-px.png'
+import bannerImage2 from '../../assets/img/bannerimage2.jpg'
 import { BsChevronLeft as LeftArrow, BsChevronRight as RigthArrow } from 'react-icons/bs'
 import { MainButton } from '../Buttons/MainButton/MianButton'
+import { SlideControl } from '../SlideControl/SlideControl'
 
 export const MainBanner = () => {
   const [scrolX, setScrollX] = useState(1)
+  const [slide, setSlide] = useState(1)
+
+  useEffect(() => {
+    setScrollX(slide)
+  }, [slide])
+
+  useEffect(() => {
+    setTimeout(() => {
+      if (slide < 2) {
+        setSlide(slide + 1)
+      } else {
+        setSlide(1)
+      }
+    }, 3000)
+  })
 
   const handleRigthArrow = () => {
     let x = scrolX + 1
@@ -14,6 +30,7 @@ export const MainBanner = () => {
       x = 2
     }
     setScrollX(x)
+    setSlide(x)
   }
   const handleLeftArrow = () => {
     let x = scrolX - 1
@@ -21,8 +38,10 @@ export const MainBanner = () => {
       x = 1
     }
     setScrollX(x)
+    setSlide(x)
   }
   return (
+    <>
         <section className={style.mainBaner__container}>
             <img style={scrolX === 1 ? { display: 'block' } : { display: 'none' }} src={bannerImage1} alt="" />
             <img style={scrolX === 2 ? { display: 'block' } : { display: 'none' }} src={bannerImage2} alt="" />
@@ -35,5 +54,7 @@ export const MainBanner = () => {
                 <RigthArrow onClick={handleRigthArrow} className={style.arrow__rigth}>{'>'}</RigthArrow>
             </div>
         </section>
+        <SlideControl slide={slide} setSlide={setSlide} number={2} />
+    </>
   )
 }
