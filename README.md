@@ -15,7 +15,7 @@
 
 ```sh
  
-git clone https://github.com/eduahcb/teste-front-end.git
+git clone https://github.com/pablotelles/teste-front-end.git
 
 cd teste-front-end
  
