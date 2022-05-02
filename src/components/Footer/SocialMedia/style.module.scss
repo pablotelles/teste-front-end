@@ -1,0 +1,36 @@
+@import '../../../style/abstract/variables';
+
+.socialMedia__container{
+    max-width: 489px;
+    text-align: center;
+    padding: 48px 75px;
+    border-right: 1px solid white;
+    margin: 0 auto;
+    h4{
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 36px;
+        text-align: center;
+        color: white;
+    }
+    .SocialMedia__icons{
+        display: flex;
+        justify-content: center;
+        margin: 37px 0 67px 0 ;
+        gap: 32px;
+    }
+    p{
+        margin: 24px auto;
+        max-width: 339px;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 21px;
+        text-align: center;
+        color: white;
+    }
+}
+@media (max-width: 760px){
+    .socialMedia__container{
+        padding: 48px 20px 0 20px;
+    }
+}

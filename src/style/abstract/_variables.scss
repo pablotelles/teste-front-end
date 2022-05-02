@@ -31,4 +31,7 @@ $breakpoint: 760px;
     margin: 88px 56px;
     margin-bottom: 40px;
     position: relative;
+    @media (max-width: $breakpoint) {
+        margin: 88px 20px;
+    }
 }

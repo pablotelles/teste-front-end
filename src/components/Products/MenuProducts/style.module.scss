@@ -4,6 +4,8 @@
     display: flex;
     list-style: none;
     gap: 16px;
+    max-width: 661px;
+    overflow: hidden;
         li{
             button{
                 padding: 10px 16px;

@@ -29,6 +29,10 @@
     }
 }
 @media (max-width: $breakpoint){
+    .mobile__menu{
+        margin: 0 auto;
+        display: block;
+    }
     .headerMenu{
         ul{
             flex-direction: column;

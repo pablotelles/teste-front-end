@@ -14,7 +14,7 @@ export const Product = ({ products, setSlide, slide }) => {
     if (slide < 2) {
       handleArrowLeft()
     } else if (slide > 2) {
-      handleArrowRigth()
+      handleArrowRigth(slide, setSlide, setScrollX, widthList)
     } else if (slide === 2) {
       setScrollX(-1000)
     }
@@ -44,10 +44,19 @@ export const Product = ({ products, setSlide, slide }) => {
   }
   return (
     <div className={style.products__container}>
-        <LeftArrow onClick={handleArrowLeft} className={style.leftArrow} />
-        <RigthArrow onClick={() => handleArrowRigth(setScrollX, setSlide, widthList)} className={style.rigthArrow} />
-        <section className={style.products__list} style={{ marginLeft: scrollX, width: widthList }}>
-            {products.map((item, index) => (
+        <LeftArrow
+          onClick={handleArrowLeft}
+          className={style.leftArrow}
+        />
+        <RigthArrow
+          onClick={handleArrowRigth}
+          className={style.rigthArrow}
+        />
+        <section
+          className={style.products__list}
+          style={{ marginLeft: scrollX, width: widthList }}
+        >
+            {products.map((item) => (
                 <article className={style.products__item} key={item.index}>
                   <div className={style.products__icons}>
                     <p>40%OFF</p>

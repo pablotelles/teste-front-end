@@ -6,8 +6,9 @@ import { MainBanner } from '../../components/MainBanner/MainBanner'
 import { Partners } from '../../components/Partners/Partners'
 import { Products } from '../../components/Products/Products/Products'
 import { Blog } from '../../components/Blog/Blog/Blog'
-import { Instagram } from '../Instagram/Instagram'
+import { Instagram } from './Instagram/Instagram'
 import { Contact } from './Contact/Contact'
+import { Footer } from '../../components/Footer/Footer/Footer'
 
 export const Home = () => {
   return (
@@ -22,6 +23,7 @@ export const Home = () => {
             <Blog />
             <Instagram />
             <Contact />
+            <Footer />
         </div>
     </>
   )

@@ -1,17 +1,33 @@
-@import '../../style/abstract/variables';
+@import '../../../style/abstract/variables';
 
 .container{
-    @include container();
     overflow: hidden;
+    padding-top: 164px;
+    h2{
+        padding: 0 56px;
+        padding-bottom: 32px;
+    }
     div{
-        
-        background-color: aqua;
-        display: flex;        
-        .instagram__image{
-            height: 243px;     
-            width: 1000px; 
+        display: flex;
+        width: 110%;
+         .instagram__image{
+            height: 300px;     
+            width: 300px;
         }
     }
-
-
+}
+@media (max-width: 760px) {
+    .container{
+        padding-top: 88px;
+        h2{
+            padding: 0 20px;
+            padding-bottom: 32px;
+        }
+        div{
+             .instagram__image{
+                height: 100px;     
+                width: 100px;
+            }
+        }
+    }
 }
