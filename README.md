@@ -17,6 +17,7 @@ git clone https://github.com/eduahcb/teste-front-end.git
 
 cd teste-front-end
  
+```
 
 ## Install Dependencies
 ```sh
