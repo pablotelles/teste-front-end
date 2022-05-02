@@ -2,15 +2,16 @@
 
 .brands__container{
     @include container();
+    padding-top: 88px;
     .left__arrow{
         @include arrows();
         left: 0;
-        top: 150px;
+        top: 245px;
     }
     .rigth__arrow{
         @include arrows();
         right: 0;
-        top: 150px;
+        top: 245px;
     }
     .brands__list{
         display: flex;

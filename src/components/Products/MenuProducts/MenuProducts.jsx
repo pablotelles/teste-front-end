@@ -5,7 +5,7 @@ export const MenuProducts = () => {
   return (
         <ul className={style.menu__list}>
             <li>
-            <button autoFocus>É agitado</button>
+                <button autoFocus>É agitado</button>
             </li>
             <li>
                 <button>Morde</button>

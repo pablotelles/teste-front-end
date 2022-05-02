@@ -1,0 +1,21 @@
+@import '../../../style/abstract/variables';
+
+.footer__container{
+    background-color: $color-yellow;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    .social__media{
+      grid-row: span 2; 
+    }
+    .CNPJ{
+ 
+        grid-column: 2;
+    }
+}
+@media (max-width: $breakpoint) {
+    .footer__container{
+        display: flex;
+        flex-direction: column;
+        overflow: hidden;
+    }
+}

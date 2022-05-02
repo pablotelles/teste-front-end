@@ -1,0 +1,23 @@
+@import '../../../style/abstract/variables';
+
+.section__CNPJ__container{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 56px;
+    border-left: 1px solid white;
+    p{
+        color: white;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 18px;
+    }
+    img{
+         max-width: 226.08px;         
+    }
+}
+@media (max-width: $breakpoint) {
+    .section__CNPJ__container{
+        flex-direction: column;
+        gap: 20px;
+    }
+}

@@ -3,12 +3,12 @@ import style from './style.module.scss'
 import PropTypes from 'prop-types'
 
 export const SlideControl = ({ setSlide, slide, number }) => {
-  const numberSlides = []
+  const itemsSlide = []
   function handlerSlideChange (position) {
     setSlide(position)
   }
   for (let i = 1; i <= number; i++) {
-    numberSlides.push(<button
+    itemsSlide.push(<button
         className={slide === i
           ? style.slide__options__icon__Active
           : style.slide__options__icon }
@@ -17,7 +17,7 @@ export const SlideControl = ({ setSlide, slide, number }) => {
   }
   return (
     <div className={style.slide__options}>
-        {numberSlides}
+        {itemsSlide}
     </div>
   )
 }

@@ -1,0 +1,16 @@
+.footer__payment__container{
+        display: flex;
+        align-items: center;
+        gap: 178px;  
+        padding: 30px 56px;
+        border-bottom: 1px solid white;
+        h4{
+            font-weight: 700;
+            font-size: 20px;
+            line-height: 30px;
+            color: white;        
+            text-transform: uppercase;
+            margin-bottom: 20px;
+        }
+
+}
